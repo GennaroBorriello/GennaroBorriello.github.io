@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.navbar {
+    background-color: rgb(230 120 18);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.bklogo {
+    padding-top: 0.8%;
+    padding-bottom: 0.8%;
+}
+
+.navbar a {
+    color: rgb(255 255 255);
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    font-size: 12pt;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+}
+
+.navbar a:hover {
+    background-color: rgb(210 100 0);
+    font-size: 13pt;
+}
+
+.hero {
+    background-color: rgb(40 40 40);
+    text-align: center;
+}
+
+.megaburger {
+    max-width: 100%;
+}
+
+.column {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.maintext {
+    background-color: rgb(255 255 255);
+    padding: 40px 10% 40px 10%;
+}
+
+.maintext h1 {
+    color: rgb(108 61 49);
+    font-size: 30pt;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.maintext h2 {
+    color: rgb(230 120 18);
+    font-size: 18pt;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.maintext p {
+    color: rgb(40 40 40);
+    font-size: 12pt;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 18pt;
+}
+
+.maintext a {
+    color: rgb(230 120 18);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.maintext a:hover {
+    color: rgb(108 61 49);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+.footer {
+    background-color: rgb(40 40 40);
+    text-align: center;
+    padding: 20px;
+}
+
+.footer p {
+    text-align: center;
+    color: rgb(255 255 255);
+    font-size: 10pt;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 13pt;
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .navbar a {
+        font-size: 11pt;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .bklogo {
+        display: none;
+    }
+    
+    .maintext {
+        background-color: white;
+        padding: 20px 40px 40px 40px;
+    }
+
+    .footer p {
+        padding-top: 0px;
+    }
+}
