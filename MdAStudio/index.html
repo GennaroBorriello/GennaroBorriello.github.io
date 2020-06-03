@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.typekit.net/sfd8dxj.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/animate.css"/>
+<title>MdA</title>
+</head>
+<body class="fede-in-animate">
+
+<!-- navbar start -->
+
+<hero>
+  <div id="navbar" >
+    <div id="menu-toggle">
+      <div class="mobile-menu positionx">
+        <button class="mobile-button"><img src="img/menu.png" width="40%" height="40%" alt="menu"> </button>
+        <div class="mobile-content"><a href="#services">SERVICES</a> <a href="#works">WORKS</a> <a href="#aboutus">ABOUT US</a> <a href="#contacts">CONTACTS</a></div>
+      </div>
+    </div>
+    <div class="sytle-nav">
+      <ul>
+        <li><a href="#logo-section"><img src="img/logo.svg" alt="MdA logo"  width="75px" height="55px"></a></li>
+        <li>
+          <div class="vl"></div>
+        </li>
+        <li class="position-content"><a href="#services">SERVICES</a></li>
+        <li class="position-content"><a href="#works">WORKS</a></li>
+        <li class="position-content"><a href="#aboutus">ABOUT US</a></li>
+        <li class="position-content"><a href="#contacts">CONTACTS</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- navbar end --> 
+  <!-- parallax -->
+  <section id="logo-section"> <img class="scene" data-modifier="30" src="img/p2.png" alt=""> <img class="scene position-thumb-image" data-modifier="26" src="img/illustration_animated.svg"  alt=""> <img class="scene" data-modifier="0" src="img/p6.png" alt=""> </section>
+</hero>
+<!-- parallax end --> 
+<!-- services -->
+
+<section class="container wow fadeInUp" data-wow-offset="50">
+  <div class="wrap">
+      <div id="services"></div>
+    <div class="box"> <img src="img/icone.svg" alt="">
+      <h1> Ciao sono un testo</h1>
+      <p> ciao sono un paragrafo</p>
+    </div>
+    <div class="box"> <img src="img/web.svg" alt="">
+      <h1> Ciao sono un testo</h1>
+      <p> ciao sono un paragrafo</p>
+    </div>
+    <div class="box"> <img src="img/game.svg" alt="">
+      <h1> Ciao sono un testo</h1>
+      <p> ciao sono un paragrafo</p>
+    </div>
+  </div>
+</section>
+
+<!-- services end --> 
+<!-- works start -->
+<section>
+  <div class="container2 ">
+    <div id="works">
+      <div class="title1">02 WORKS</div>
+      <div class="row top-space">
+        <div class="column"> <img src="img/image_processing20200521-32025-1tjo14v.gif" style="width:450px, height:300px"  alt=""> <img src="img/image_processing20190826-24666-1w4ef8k.png" style="width:425px, height:380px" alt=""> </div>
+        <div class="column"> <img src="img/image_processing20200127-21623-1g0k1jv.jpg" style="width:450px, height:300px"  alt=""> <img src="img/image_processing20191103-13576-1904aj2.jpg" style="width:425px, height:380px" alt=""> </div>
+        <div class="column"> <img src="img/image.png" style="width:450px, height:300px"  alt=""> <img src="img/image_processing20190828-29461-1qv2jjn.png" style="width:425px, height:380px" alt=""> </div>
+        <div class="column"> <img src="img/dribbble_tavola_disegno_1_4x.png" style="width:450px, height:300px"  alt=""> <img src="img/image_processing20200322-5163-14zr01k.jpg" style="width:425px, height:380px" alt=""> </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- works end --> 
+
+<!-- aboutus start -->
+<section class="container3">
+    <div id="aboutus">
+  <div class="wrap3">
+    <div class="box3"> <img src="img/Card template.svg" width="300px" alt=""> </div>
+    <div class="box3"> <img src="img/Card template.svg" width="300px" alt=""> </div>
+    <div class="box3"> <img src="img/Card template.svg" width="300px" alt=""> </div>
+    <div class="box3"> <img src="img/Card template.svg" width="300px" alt=""> </div>
+  </div>
+    </div>
+</section>
+
+<!-- form start -->
+<section>
+  <div class="container4">
+    <div id="contacts">
+      <div class="title1">04 CONTACTS</div>
+      <div class="form-field colcont x-50">
+         <input id="name" class="input-text js-input" type="text" required>
+         <label class="label" for="name">NAME</label>
+      </div>
+      <div class="form-field colcont x-50">
+         <input id="email" class="input-text js-input" type="email" required>
+         <label class="label" for="email">E-MAIL</label>
+      </div>
+      <div class="form-field colcont x-100">
+         <input id="message" class="input-text js-input" type="text" required>
+         <label class="label" for="message">MESSAGE</label>
+      </div>
+      <div class="form-field colcont x-100 align-center">
+         <input class="submit-button" type="submit" value="SUBMIT">
+      </div>
+        </div>
+</section>
+<!-- form end --> 
+
+<!-- footer start -->
+<footer class="footer"></footer>
+<!-- footer end --> 
+<!-- js before the body close tag --> 
+
+<script src="dist/basicScroll.min.js"></script> 
+<script>
+	document.querySelectorAll('.scene').forEach((elem) => {
+	const modifier = elem.getAttribute('data-modifier')
+	basicScroll.create({
+		elem: elem,
+		from: 0,
+		to: 519,
+		direct: true,
+		props: {
+			'--translateY': {
+				from: '0',
+				to: `${ 10 * modifier }px`
+			}
+		}
+	}).start()	
+})
+
+// When the user scrolls down 600px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+    document.getElementById("navbar").style.top = "-0";
+  } else {
+    document.getElementById("navbar").style.top = "-100px";
+  }
+}
+</script> 
+<!-- JS WOW --> 
+<script src="js/wow.min.js"></script> 
+<script>
+              new WOW().init();
+              </script>
+</body>
+</html>
